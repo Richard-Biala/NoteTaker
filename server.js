@@ -67,12 +67,12 @@ app.post("/api/notes", function (req, res) {
     res.json(newNotes);
 });
 
-app.delete("/api/notes/:id", (req, res) => {
-    const id = req.params.id;
-    connection.query("DELETE FROM notes WHERE ?", { id }, (err, response) => {
-        return res.json(response);
-    })
-})
+// app.delete("/api/notes/:id", (req, res) => {
+//     const id = req.params.id;
+//     connection.query("DELETE FROM notes WHERE ?", { id }, (err, response) => {
+//         return res.json(response);
+//     })
+// })
 
 // Starts the server to begin listening
 // =============================================================
