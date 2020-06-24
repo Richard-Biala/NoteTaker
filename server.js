@@ -35,8 +35,8 @@ app.get("/api/notes", function (req, res) {
 });
 
 // Displays a single note, or returns false
-app.get("/api/notes/:notes", function (req, res) {
-    var chosen = req.params.notes;
+app.delete("/api/notes/:id", function (req, res) {
+    var chosen = req.param.id;
 
     console.log(chosen);
 
